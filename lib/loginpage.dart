@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gps/dashboard.dart';
 
 import 'otpScreen.dart';
 import 'signup.dart';
@@ -115,9 +116,9 @@ class _loginpageState extends State<loginpage> {
                     SizedBox(height: screenHeight * 0.02),
                     ElevatedButton(
                       onPressed: () {
-                        // Navigator.push(context,
-                        //     MaterialPageRoute(builder: (context) => otpScreen())
-                        // );
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => dashboardScreen())
+                        );
                       },
                       child: Text(
                         'Login',

@@ -13,16 +13,21 @@ class _alarmScreenState extends State<alarmScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back_ios),
+          //replace with our own icon data.
+        ),
         title: Stack(
           children: <Widget>[
-            Container(
-              width: double.infinity,
-            ),
-            Center(
-              child: Text(
-                'Proximity Alarm',
-                style: TextStyle(fontSize: 35.0, color: Color(0xFF28283D)),
-              ),
+            // Container(
+            //   width: double.infinity,
+            // ),
+            Text(
+              'Proximity Alarm',
+              style: TextStyle(fontSize: 35.0, color: Color(0xFF28283D)),
             ),
           ],
         ),
@@ -76,9 +81,9 @@ class _alarmScreenState extends State<alarmScreen> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFF28283D),
                     padding: EdgeInsets.symmetric(
-                        vertical: screenHeight * 0.03,
+                        vertical: screenHeight * 0.02,
                         horizontal: screenWidth * 0.15),
-                    textStyle: TextStyle(fontSize: 25),
+                    textStyle: TextStyle(fontSize: 20),
                   ),
                 ),
               ),

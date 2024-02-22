@@ -10,7 +10,18 @@ class otpScreen extends StatefulWidget {
 class _otpScreenState extends State<otpScreen> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
+      appBar: AppBar(
+
+          leading: IconButton(
+            onPressed: (){
+              Navigator.pop(context);
+            },
+            icon:Icon(Icons.arrow_back_ios),
+            //replace with our own icon data.
+          )
+      ),
       body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
         double screenWidth = constraints.maxWidth;
@@ -21,7 +32,7 @@ class _otpScreenState extends State<otpScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(top: screenHeight * 0.1),
+                padding: EdgeInsets.only(top: screenHeight * 0.0),
                 child: Center(
                   child: SizedBox(
                       width: screenWidth * 0.5,

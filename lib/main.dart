@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:gps/alarmScreen.dart';
+import 'package:gps/dashboard.dart';
+import 'package:gps/helpScreen.dart';
+import 'package:gps/historyScreen.dart';
+import 'package:gps/loginpage.dart';
+import 'package:gps/notificationScreen.dart';
 import 'package:gps/oledScreen.dart';
 import 'otpScreen.dart';
 
@@ -17,7 +23,7 @@ class MainGPS extends StatelessWidget {
       title: 'GPS-RTK',
 
 
-      home: otpScreen(),
+      home: loginpage(),
     );
   }
 }

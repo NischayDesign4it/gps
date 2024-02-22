@@ -12,16 +12,22 @@ class _recordingScreenState extends State<recordingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          leading: IconButton(
+            onPressed: (){
+              Navigator.pop(context);
+            },
+            icon:Icon(Icons.arrow_back_ios),
+            //replace with our own icon data.
+          ),
           title: Stack(
             children: <Widget>[
-              Container(
-                width: double.infinity,
-              ),
-              Center(
-                child: Text(
+              // Container(
+              //   width: double.infinity,
+              // ),
+
+                Text(
                   'Recording Module',
                   style: TextStyle(fontSize: 35.0, color: Color(0xFF28283D)),
-                ),
               ),
             ],
           ),
